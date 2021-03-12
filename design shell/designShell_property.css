@@ -1,0 +1,46 @@
+.div{
+    border: 2px solid pink;
+}
+h1{ 
+    text-align: center;
+    font-size: 100px;
+    margin: fixed;
+    color:cyan;
+
+    
+}
+
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;    
+    font-family: fantasy;
+    color:white;
+   
+
+}
+
+#p1,p2{
+    margin-left: 10px;
+    padding: 10px;
+    font-size:30px;
+    transition: transform 1s ease-in-out;
+}
+
+
+
+#p2{
+    transition:font-size 15s;
+}
+#p2:hover{
+    font-size: 40px;
+}
+#p3{
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: serif;
+    color:aquamarine;
+    font-style: italic;
+    font-weight: bold;
+}
