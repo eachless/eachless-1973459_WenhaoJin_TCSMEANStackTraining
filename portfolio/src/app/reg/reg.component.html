@@ -1,0 +1,15 @@
+<div>
+    <h1 style ="text-align: center;">Registration Form</h1>
+    First name: 
+    <input type ="text" #fname ><br/><br>
+    Last name:
+    <input type = "text" #lname><br/><br>
+    Username:
+    <input type = "text" #username><br/><br>
+    Password:
+    <input type = "password" #pass1><br/> <br>
+    <input type = "button" value = "register" (click) = "addInfo(username.value,pass1.value)" class="btn btn-dark">
+    <input type = "button" value = "reset" (click)="reset(fname,lname,username,pass1)" class="btn btn-dark"> 
+     <hr>
+    <input type ="button"  value ="log-in" (click)="gologin()" class="btn btn-dark" >
+</div>

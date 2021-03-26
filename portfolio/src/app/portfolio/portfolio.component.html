@@ -1,0 +1,24 @@
+<div >
+    <p>Welcome {{msg}}  </p> <br/>
+    <div >
+        Contact Name: <input type ="text" #contactName>
+        Phone NO: <input type ="text" #phone> <hr>
+        <input type = "button"  value ="save" (click)="save(contactName.value,phone.value)"> 
+        
+        <table class="table">
+            <thead>
+              <tr>             
+                <th scope="col">Name</th>
+                <th scope="col">Phone NUmber</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor ="let con of contactInfoArr">
+                    <td>{{con.contactName}}</td>
+                    <td>{{con.phoneNumber}}</td>
+                </tr>    
+            </tbody>
+          </table>
+
+    </div>
+</div>   
