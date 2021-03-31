@@ -1,0 +1,54 @@
+<fieldset>
+    <h3>Single choice</h3>
+   
+    <fieldset class ="question">
+        <p id="1">Qeustion 1: what's the data type for angular</p>
+        <label><input type="radio" name="1" value="a"  (change) ="radioChangeHandler($event)"  />number</label>
+        <br/>
+        <label><input type="radio" name="1" value="b"(change) ="radioChangeHandler($event)"/>integer</label>
+        <br/>
+        <label><input type="radio" name="1" value="c"(change) ="radioChangeHandler($event)"/>double</label>
+    </fieldset>
+
+    <fieldset class ="question">
+        <p id="2">Question 2: What is the decorator used for configuring your module class?e</p>
+        <label><input type = "radio" name ="2"value="a" (change) ="radioChangeHandler($event)" >@ngModule</label>
+        <br/>
+        <label><input type ="radio" name="2" value="b" (change) ="radioChangeHandler($event)" >!ngModule</label>
+        <br/>
+        <label><input type ="radio" name ="2"value="c" (change) ="radioChangeHandler($event)" >@ngApp</label>
+    </fieldset>
+
+    <fieldset class="question">
+        <p id ="3">Quetion 3: which charater is used for chaining multiple pipe?</p>
+        <label><input type ="radio" name ="3" value ="a" (change) ="radioChangeHandler($event)" >:</label> <br/>
+        <label><input type ="radio" name ="3" value ="b" (change) ="radioChangeHandler($event)" >|</label> <br/>
+        <label><input type ="radio" name ="3" value ="c"(change) ="radioChangeHandler($event)" >both</label> <br/>
+        <label><input type ="radio" name ="3" value ="d"(change) ="radioChangeHandler($event)" >none of above</label> <br/>
+    </fieldset>
+
+    <fieldset class="question">
+        <p id ="4">Quetion 4: What is .subscribe?</p>
+        <label><input type ="radio" name ="4" value ="a"(change) ="radioChangeHandler($event)" >streams data in asynchronously</label> <br/>
+        <label><input type ="radio" name ="4" value ="b" (change) ="radioChangeHandler($event)" >stream data in synchronously</label> <br/>
+        <label><input type ="radio" name ="4" value ="c"(change) ="radioChangeHandler($event)" >both</label> <br/>
+        <label><input type ="radio" name ="4" value ="d"(change) ="radioChangeHandler($event)" >none of above</label> <br/>
+    </fieldset>
+
+    <fieldset class="question">
+        <p id ="5">Quetion 5:  Router is part of which of the following module</p>
+        <label><input type ="radio" name ="5" value ="a" (change) ="radioChangeHandler($event)" >@angular/core</label><br/>
+        <label><input type ="radio" name ="5" value ="b" (change) ="radioChangeHandler($event)" >@angular/router </label><br/>
+        <label><input type ="radio" name ="5" value ="c" (change) ="radioChangeHandler($event)" >both</label><br/>
+        <label><input type ="radio" name ="5" value ="d" (change) ="radioChangeHandler($event)"  >none of above</label><br/>
+    </fieldset>
+
+    <fieldset class="question">
+        <p id ="6">Quetion 6: What does AOT stand for?</p>
+        <label><input type ="radio" name ="6" value ="a" (change) ="radioChangeHandler($event)" >Ahead of time compilation</label><br/>
+        <label><input type ="radio" name ="6" value ="b" (change) ="radioChangeHandler($event)" >angular object template</label><br/>
+        <label><input type ="radio" name ="6" value ="c" (change) ="radioChangeHandler($event)" >both</label><br/>
+        <label><input type ="radio" name ="6" value ="d" (change) ="radioChangeHandler($event)" >none of above</label><br/>
+    </fieldset>
+
+    <input type ="button" value ="submit" (click) ="checkAnswer()">

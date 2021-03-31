@@ -1,0 +1,61 @@
+ <div>
+    <div class="container" >
+        <div class="row" >
+          <div class="col">
+            <p style="text-align: center;">Task Tracker</p>
+            <br><br/>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Task</p>
+
+            <form #empRef="ngForm" (ngSubmit)="storeTask(empRef.value)">
+              <mat-form-field>
+                  <mat-label>Id</mat-label>
+                  <input matInput type="text" name="id" ngModel/>
+              </mat-form-field>
+              &nbsp;
+              <mat-form-field>
+                  <mat-label>Name</mat-label>
+                  <input matInput type="text" name="name" ngModel/>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>task</mat-label>
+                <input matInput type="text" name="task" ngModel/>
+              </mat-form-field>
+              <mat-form-field>
+              <mat-label>date</mat-label>
+              <input matInput type="text" name="date" ngModel/>
+          </mat-form-field>
+              <br/>
+              <button mat-stroked-button color="primary" 
+              style="background-color:darkorange;" type="submit">Store</button>
+          </form>
+         
+          
+          <div class="col">
+            <table class="table">
+              <thead>
+                <tr>             
+                  <th scope="col">Id</th>
+                  <th scope="col">name</th>
+                  <th scope="col">Task</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor ="let task of taskArr">
+                      <td>{{task.id}}</td>
+                      <td>{{task.name}}</td>
+                      <td>{{task.task}}</td>
+                      <td>{{task.date}}</td>
+                  </tr>    
+              </tbody>
+            </table> 
+          </div>
+
+        </div>
+      </div>
+</div>
