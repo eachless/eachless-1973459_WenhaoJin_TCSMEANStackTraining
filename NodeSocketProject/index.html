@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="socket.io/socket.io.js"></script>
+    <script type ="text/JavaScript">
+        var socket =io();
+              
+       
+        function hello(){
+            var myName = document.getElementById("inputName").value;
+            var msg = document.getElementById("msgClass").value;
+            //console.log(myName);
+            socket.emit("name",myName);
+            socket.emit("mmm",msg);
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <label>Name</label>
+    <input type="text" id ="inputName" >
+    <label>Message</label>
+    <input type ="text" id ="msgClass"> <br>
+    <input type ="button" value ="submit" onclick = "hello()"/>
+    
+    
+</body>
+</html>
