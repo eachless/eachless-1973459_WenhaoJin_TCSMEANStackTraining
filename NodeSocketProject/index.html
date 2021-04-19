@@ -14,8 +14,8 @@
             var myName = document.getElementById("inputName").value;
             var msg = document.getElementById("msgClass").value;
             //console.log(myName);
-            socket.emit("name",myName);
-            socket.emit("mmm",msg);
+            socket.emit("name",myName,msg);
+            //socket.emit("mmm",msg);
         }
         
     </script>
